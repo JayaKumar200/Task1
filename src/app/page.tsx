@@ -38,7 +38,11 @@ const Page = () => {
     }
   }
 
-
+const transferAmount = async()=>{
+  const {message} = await transfer(amount)
+  alert(message)
+  console.log(message)
+}
 
   return (
     <main>
@@ -76,7 +80,7 @@ const Page = () => {
             onChange={(e) => setAmount(Number(e.target.value))}
             required
           />
-          <button onClick={(e)=> transfer(amount)} className='btn'>
+          <button onClick={transferAmount} className='btn'>
             Click to Transfer
           </button>
         
@@ -88,3 +92,4 @@ const Page = () => {
 }
 
 export default Page
+
