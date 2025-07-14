@@ -1,0 +1,31 @@
+*{
+    background-color: gray;
+    color: black;
+    font-family: sans-serif;
+    font-size: 17px;
+    gap: 10px;
+
+
+
+
+}
+.container{
+    margin-top: 20%;
+    margin-left: 35%;
+}
+
+input {
+    border: 2px solid red;
+    border-radius: 5px;
+     padding: 10px;
+     margin-right: 8px;
+     cursor: pointer;
+}
+.btn{
+    color: white;
+    cursor: pointer;
+}
+.btn:hover{
+    color: yellow;
+    text-decoration: underline;
+}
